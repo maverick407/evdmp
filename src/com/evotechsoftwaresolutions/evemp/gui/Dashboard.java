@@ -34,6 +34,7 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel9.setVisible(false);
         jPanel10.setVisible(false);
         jPanel11.setVisible(false);
+        jPanel12.setVisible(false);
         showPanel(jPanel8);
     }
 
@@ -95,7 +96,6 @@ public class Dashboard extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jPanel6 = new javax.swing.JPanel();
         jPanel8 = new javax.swing.JPanel();
-        jPanel13 = new javax.swing.JPanel();
         jPanel9 = new javax.swing.JPanel();
         jPanel14 = new javax.swing.JPanel();
         filler10 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 0), new java.awt.Dimension(10, 0), new java.awt.Dimension(32767, 0));
@@ -113,7 +113,38 @@ public class Dashboard extends javax.swing.JFrame {
         jButton7 = new javax.swing.JButton();
         filler5 = new javax.swing.Box.Filler(new java.awt.Dimension(15, 0), new java.awt.Dimension(40, 0), new java.awt.Dimension(100, 0));
         jPanel10 = new javax.swing.JPanel();
+        jPanel16 = new javax.swing.JPanel();
+        filler12 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 0), new java.awt.Dimension(10, 0), new java.awt.Dimension(32767, 0));
+        filler13 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 10), new java.awt.Dimension(0, 32767));
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTable2 = new javax.swing.JTable();
+        filler14 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 10), new java.awt.Dimension(0, 32767));
+        filler15 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 0), new java.awt.Dimension(10, 0), new java.awt.Dimension(32767, 0));
+        jPanel17 = new javax.swing.JPanel();
+        filler16 = new javax.swing.Box.Filler(new java.awt.Dimension(75, 0), new java.awt.Dimension(250, 0), new java.awt.Dimension(300, 0));
+        jTextField2 = new javax.swing.JTextField();
+        filler17 = new javax.swing.Box.Filler(new java.awt.Dimension(50, 50), new java.awt.Dimension(10, 10), new java.awt.Dimension(32767, 50));
+        jButton8 = new javax.swing.JButton();
+        filler18 = new javax.swing.Box.Filler(new java.awt.Dimension(75, 0), new java.awt.Dimension(150, 0), new java.awt.Dimension(300, 0));
+        jButton9 = new javax.swing.JButton();
+        filler19 = new javax.swing.Box.Filler(new java.awt.Dimension(15, 0), new java.awt.Dimension(40, 0), new java.awt.Dimension(100, 0));
         jPanel11 = new javax.swing.JPanel();
+        jPanel18 = new javax.swing.JPanel();
+        filler21 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 10), new java.awt.Dimension(0, 32767));
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jTable3 = new javax.swing.JTable();
+        filler22 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 10), new java.awt.Dimension(0, 32767));
+        filler23 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 0), new java.awt.Dimension(10, 0), new java.awt.Dimension(32767, 0));
+        jPanel12 = new javax.swing.JPanel();
+        jPanel13 = new javax.swing.JPanel();
+        jPanel19 = new javax.swing.JPanel();
+        filler24 = new javax.swing.Box.Filler(new java.awt.Dimension(75, 0), new java.awt.Dimension(250, 0), new java.awt.Dimension(300, 0));
+        jTextField3 = new javax.swing.JTextField();
+        filler25 = new javax.swing.Box.Filler(new java.awt.Dimension(50, 50), new java.awt.Dimension(10, 10), new java.awt.Dimension(32767, 50));
+        jButton10 = new javax.swing.JButton();
+        filler26 = new javax.swing.Box.Filler(new java.awt.Dimension(75, 0), new java.awt.Dimension(150, 0), new java.awt.Dimension(300, 0));
+        jButton11 = new javax.swing.JButton();
+        filler27 = new javax.swing.Box.Filler(new java.awt.Dimension(15, 0), new java.awt.Dimension(40, 0), new java.awt.Dimension(100, 0));
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -217,8 +248,6 @@ public class Dashboard extends javax.swing.JFrame {
 
         jPanel8.setBackground(new java.awt.Color(255, 255, 255));
         jPanel8.setLayout(new java.awt.BorderLayout());
-        jPanel8.add(jPanel13, java.awt.BorderLayout.CENTER);
-
         jPanel6.add(jPanel8, "card2");
 
         jPanel9.setBackground(new java.awt.Color(255, 255, 255));
@@ -245,6 +274,10 @@ public class Dashboard extends javax.swing.JFrame {
             }
         });
         jScrollPane1.setViewportView(jTable1);
+        if (jTable1.getColumnModel().getColumnCount() > 0) {
+            jTable1.getColumnModel().getColumn(3).setHeaderValue("Expiry Date");
+            jTable1.getColumnModel().getColumn(4).setHeaderValue("Total");
+        }
 
         jPanel14.add(jScrollPane1, java.awt.BorderLayout.CENTER);
         jPanel14.add(filler9, java.awt.BorderLayout.PAGE_START);
@@ -284,7 +317,146 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel6.add(jPanel9, "card3");
 
         jPanel10.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel10.setLayout(new java.awt.BorderLayout());
+
+        jPanel16.setLayout(new java.awt.BorderLayout());
+        jPanel16.add(filler12, java.awt.BorderLayout.LINE_END);
+        jPanel16.add(filler13, java.awt.BorderLayout.PAGE_END);
+
+        jTable2.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Invoice ID", "Customer Name", "Issued Date", "Total"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane2.setViewportView(jTable2);
+        if (jTable2.getColumnModel().getColumnCount() > 0) {
+            jTable2.getColumnModel().getColumn(3).setHeaderValue("Total");
+        }
+
+        jPanel16.add(jScrollPane2, java.awt.BorderLayout.CENTER);
+        jPanel16.add(filler14, java.awt.BorderLayout.PAGE_START);
+        jPanel16.add(filler15, java.awt.BorderLayout.LINE_START);
+
+        jPanel10.add(jPanel16, java.awt.BorderLayout.CENTER);
+
+        jPanel17.setLayout(new javax.swing.BoxLayout(jPanel17, javax.swing.BoxLayout.LINE_AXIS));
+        jPanel17.add(filler16);
+
+        jTextField2.setMargin(new java.awt.Insets(5, 6, 5, 6));
+        jTextField2.setPreferredSize(new java.awt.Dimension(500, 25));
+        jPanel17.add(jTextField2);
+        jPanel17.add(filler17);
+
+        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/evotechsoftwaresolutions/evemp/img/search.png"))); // NOI18N
+        jButton8.setMaximumSize(new java.awt.Dimension(76, 40));
+        jButton8.setMinimumSize(new java.awt.Dimension(10, 27));
+        jButton8.setPreferredSize(new java.awt.Dimension(27, 27));
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
+        jPanel17.add(jButton8);
+        jPanel17.add(filler18);
+
+        jButton9.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
+        jButton9.setText("New Invoice");
+        jButton9.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 51, 51)), javax.swing.BorderFactory.createEmptyBorder(5, 10, 5, 10)));
+        jButton7.putClientProperty("JButton.arc", 50);
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
+        jPanel17.add(jButton9);
+        jPanel17.add(filler19);
+
+        jPanel10.add(jPanel17, java.awt.BorderLayout.NORTH);
+
         jPanel6.add(jPanel10, "card4");
+
+        jPanel11.setLayout(new java.awt.BorderLayout());
+
+        jPanel18.setLayout(new java.awt.BorderLayout());
+        jPanel18.add(filler21, java.awt.BorderLayout.PAGE_END);
+
+        jScrollPane3.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 10), javax.swing.BorderFactory.createTitledBorder("")));
+
+        jTable3.setAutoCreateRowSorter(true);
+        jTable3.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Customer ID", "Name", "Email"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane3.setViewportView(jTable3);
+
+        jPanel18.add(jScrollPane3, java.awt.BorderLayout.CENTER);
+        jPanel18.add(filler22, java.awt.BorderLayout.PAGE_START);
+        jPanel18.add(filler23, java.awt.BorderLayout.LINE_START);
+
+        jPanel12.setLayout(new java.awt.CardLayout());
+        jPanel12.add(jPanel13, "card2");
+
+        jPanel18.add(jPanel12, java.awt.BorderLayout.LINE_END);
+
+        jPanel11.add(jPanel18, java.awt.BorderLayout.CENTER);
+
+        jPanel19.setLayout(new javax.swing.BoxLayout(jPanel19, javax.swing.BoxLayout.LINE_AXIS));
+        jPanel19.add(filler24);
+
+        jTextField3.setMargin(new java.awt.Insets(5, 6, 5, 6));
+        jTextField3.setPreferredSize(new java.awt.Dimension(500, 25));
+        jPanel19.add(jTextField3);
+        jPanel19.add(filler25);
+
+        jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/evotechsoftwaresolutions/evemp/img/search.png"))); // NOI18N
+        jButton10.setMaximumSize(new java.awt.Dimension(76, 40));
+        jButton10.setMinimumSize(new java.awt.Dimension(10, 27));
+        jButton10.setPreferredSize(new java.awt.Dimension(27, 27));
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton10ActionPerformed(evt);
+            }
+        });
+        jPanel19.add(jButton10);
+        jPanel19.add(filler26);
+
+        jButton11.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
+        jButton11.setText("Add Customer");
+        jButton11.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 51, 51)), javax.swing.BorderFactory.createEmptyBorder(5, 10, 5, 10)));
+        jButton7.putClientProperty("JButton.arc", 50);
+        jButton11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton11ActionPerformed(evt);
+            }
+        });
+        jPanel19.add(jButton11);
+        jPanel19.add(filler27);
+
+        jPanel11.add(jPanel19, java.awt.BorderLayout.NORTH);
+
         jPanel6.add(jPanel11, "card5");
 
         jPanel1.add(jPanel6, java.awt.BorderLayout.CENTER);
@@ -314,6 +486,22 @@ public class Dashboard extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton6ActionPerformed
 
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton10ActionPerformed
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton9ActionPerformed
+
+    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+        jPanel12.setVisible(!jPanel12.isVisible());
+    }//GEN-LAST:event_jButton11ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -338,7 +526,22 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.Box.Filler filler1;
     private javax.swing.Box.Filler filler10;
     private javax.swing.Box.Filler filler11;
+    private javax.swing.Box.Filler filler12;
+    private javax.swing.Box.Filler filler13;
+    private javax.swing.Box.Filler filler14;
+    private javax.swing.Box.Filler filler15;
+    private javax.swing.Box.Filler filler16;
+    private javax.swing.Box.Filler filler17;
+    private javax.swing.Box.Filler filler18;
+    private javax.swing.Box.Filler filler19;
     private javax.swing.Box.Filler filler2;
+    private javax.swing.Box.Filler filler21;
+    private javax.swing.Box.Filler filler22;
+    private javax.swing.Box.Filler filler23;
+    private javax.swing.Box.Filler filler24;
+    private javax.swing.Box.Filler filler25;
+    private javax.swing.Box.Filler filler26;
+    private javax.swing.Box.Filler filler27;
     private javax.swing.Box.Filler filler3;
     private javax.swing.Box.Filler filler4;
     private javax.swing.Box.Filler filler5;
@@ -347,20 +550,29 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.Box.Filler filler8;
     private javax.swing.Box.Filler filler9;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton10;
+    private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
+    private javax.swing.JPanel jPanel12;
     private javax.swing.JPanel jPanel13;
     private javax.swing.JPanel jPanel14;
     private javax.swing.JPanel jPanel15;
+    private javax.swing.JPanel jPanel16;
+    private javax.swing.JPanel jPanel17;
+    private javax.swing.JPanel jPanel18;
+    private javax.swing.JPanel jPanel19;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
@@ -370,7 +582,13 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTable jTable1;
+    private javax.swing.JTable jTable2;
+    private javax.swing.JTable jTable3;
     private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
     // End of variables declaration//GEN-END:variables
 }
